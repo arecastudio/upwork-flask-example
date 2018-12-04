@@ -1,0 +1,13 @@
+	    {% if data %}
+	    {% for row in data%}
+	    <tr>
+	      <td>#</td>
+	      <td>{{ row['firstname'] }}</td>
+	      <td>{{ row['familyname'] }}</td>
+	      <td>{{ row['age'] }}</td>
+	      <td>{{ row['createdate'] }}</td>
+	      <td>{{ row['status'] }}</td>
+	      <td><a href="" target="_blank">Detail</a></td>
+	    </tr>
+	    {% endfor %}
+	    {% endif %}

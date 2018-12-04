@@ -1,0 +1,9 @@
+CREATE TABLE `person` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `familyname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `age` int(11) NOT NULL DEFAULT '1',
+  `createdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'single',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
